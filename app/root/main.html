@@ -1,0 +1,8 @@
+<div>
+	<input type="text" ng-model="query" />
+	<button ng-click="apiSubmit()">Submit</button>
+
+	<div ng-repeat="item in responseData.items">
+		<p><a href="/users/{{item.login}}">{{item.login}}</a></p>
+	</div>
+</div>
